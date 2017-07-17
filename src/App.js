@@ -46,9 +46,9 @@ const App = () => (
                     <Structure>
                         <Switch>
                             {/* non auth routes */}
-                            <Route path="/dashboard" component={Dashboard}/>
+                            <Route path="/project-dashboard/dashboard" component={Dashboard}/>
                             {/* fall through routes redirect to landing page */}
-                            <Redirect to="/dashboard"/>
+                            <Redirect to="/project-dashboard/dashboard"/>
                         </Switch>
                     </Structure>
                 </ConnectedRouter>

@@ -17,7 +17,7 @@ export const TOGGLE_FILTER = 'recordActions/TOGGLE_FILTER';
 export const SET_FILTER = 'recordActions/SET_FILTER';
 
 function fetchRecords() {
-    return fetch('/records.json', {
+    return fetch('/project-dashboard/records.json', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -98,7 +98,7 @@ export {recordsRequest};
 
 
 function fetchSaveRecord(id, key, value) {
-    return mockFetch('/records.json', {
+    return mockFetch('/project-dashboard/records.json', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
